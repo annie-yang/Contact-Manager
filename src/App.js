@@ -14,7 +14,7 @@ class App extends Component {
         <Grid>
           <Row>
             <Col xs={12} md={12} lg={12}>
-              My App
+              My Contact Manager App
             </Col>
           </Row>
         </Grid>
