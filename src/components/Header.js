@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+// importing from react bootstrap
 import {Navbar} from 'react-bootstrap';
 
 class Header extends Component {
