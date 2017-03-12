@@ -2,7 +2,7 @@
 // deals with data flow
 // "application architecture for building client-side web applications" -- Flux
 
-import {Dispatcher} form 'flux';
+import {Dispatcher} from 'flux';
 
 const AppDispatcher = new Dispatcher();
 

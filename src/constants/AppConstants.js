@@ -1,4 +1,4 @@
-import keyMirror from 'keyMirror';
+import keyMirror from 'keymirror';
 
 // object that has keys and values that matches the keys
 export default keyMirror({

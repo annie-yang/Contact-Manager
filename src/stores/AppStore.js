@@ -9,6 +9,10 @@ const CHANGE_EVENT = 'change';
 
 let _contacts = [];
 
+function setContacts(contacts){
+    _contacts = contacts;
+}
+
 class AppStoreClass extends EventEmitter{
   // when store changes, it emits an event
   emitChange(){
@@ -37,7 +41,12 @@ const AppStore = new AppStoreClass();
 AppStore.dispatchToken = AppDispatcher.register(action => {
   // test action type that comes in
   switch(action.actionType){
+    case AppConstants.RECEIVE_CONTACTS: // what to do when receive contacts
+      setContacts(action.contacts); // use 'action' to access the store
+      AppStore.emitChange();
+      break
 
+    default:
   }
 });
 

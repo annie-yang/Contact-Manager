@@ -4,6 +4,7 @@ import './App.css';
 
 // components
 import Header from './components/Header';
+import Contacts from './components/Contacts';
 
 // importing from react bootstrap
 import {Grid, Row, Col} from 'react-bootstrap';
@@ -16,7 +17,7 @@ class App extends Component {
         <Grid>
           <Row>
             <Col xs={12} md={12} lg={12}>
-              My Contact Manager App
+              <Contacts/>
             </Col>
           </Row>
         </Grid>
